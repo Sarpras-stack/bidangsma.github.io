@@ -11,7 +11,7 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     /* Basic styling */
     body {
       font-family: Arial, sans-serif;
@@ -72,6 +72,8 @@
 
     .section {
       padding: 20px 0;
+      border: 2px solid #ffffff; /* Border putih */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Stroke putih lembut */
     }
 
     .section h2 {
@@ -112,35 +114,48 @@
       font-weight: bold;
     }
 
-    /* Stroke dan border putih untuk section */
-.section {
-  padding: 20px 0;
-  border: 2px solid #ffffff; /* Border putih */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Stroke putih lembut */
-}
+    /* Contact form styling */
+    .contact-form {
+      background: #ffffff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 2px solid #ffffff; /* Border putih */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Stroke putih lembut */
+    }
 
-/* Stroke dan border putih untuk contact form */
-.contact-form {
-  background: #ffffff;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 5px;
-  border: 2px solid #ffffff; /* Border putih */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Stroke putih lembut */
-}
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
 
-/* Stroke dan border putih untuk testimonials blockquote */
-.testimonials blockquote {
-  border-left: 5px solid #ffffff; /* Border kiri putih */
-  padding-left: 20px;
-  margin: 20px 0;
-  font-style: italic;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Stroke putih lembut */
-}
+    .contact-form input, 
+    .contact-form textarea {
+      width: calc(100% - 22px); /* Full width minus padding and border */
+      padding: 10px;
+      margin: 5px 0;
+      border: 2px solid #706e6e;
+      border-radius: 4px;
+      box-sizing: border-box; /* Ensures padding and border are included in width */
+    }
+
+    .contact-form button {
+      background: #004080;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .contact-form button:hover {
+      background: #003366;
+    }
 
     /* Footer styling */
     .footer {
-      background:rgb(59, 59, 59);
+      background: rgb(59, 59, 59);
       color: #fff;
       padding: 10px 0;
       text-align: center;
@@ -167,33 +182,6 @@
         padding: 10px;
       }
     }
-        .contact-form {
-            background: #ffffff;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        .contact-form input, 
-        .contact-form textarea {
-            width: 95%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 2px solid #706e6e;
-            border-radius: 4px;
-        }
-        .contact-form button {
-            background: #004080;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        .contact-form button:hover {
-            background: #003366;
-        }
-
-
   </style>
 </head>  
 <body>
@@ -262,7 +250,7 @@
               <button type="submit">Kirim Pesan</button>
           </form>
       </div>
-  </section>
+    </section>
   </div>
 
   <footer class="footer">
